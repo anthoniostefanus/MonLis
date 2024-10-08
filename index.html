@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>MonLis</title>
+    </head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">MonLis</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">Welcome to MonLis</h1>
+                        <h2 class="home__subtitle">One stop solution to help you to monitoring your electric consumption</h2>
+                        <a href="#" class="button">View Menu</a>
+                    </div>
+    
+                    <img src="assets/img/monlis.gif" alt="" class="home__img">
+                </div>
+            </section>
+            
+            <!--========== ABOUT ==========-->
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial">About us</span>
+                        <h2 class="section-title about__initial">Innovating Energy Efficiency<br>for a Greener Tomorrow</h2>
+                        <p class="about__description">we are dedicated to promoting energy efficiency through innovative electricity monitoring solutions. Our mission is to help individuals and businesses reduce their energy consumption, lower their bills, and minimize their environmental impact.</p>
+                        <a href="#" class="button">Explore history</a>
+                    </div>
+
+                    <img src="assets/img/about.gif" alt="" class="about__img">
+                </div>
+            </section>
+
+            <!--========== MENU ==========-->
+            <section class="menu section bd-container" id="menu">
+                <span class="section-subtitle">Calculate your electricity costs to save energy!</span>
+                <h2 class="section-title">Electricity Cost Calculator </h2>
+                <div class="clear"></div>
+	<div class="navbar">
+		<form action="" method="post" id="jml_alat">
+			<label for="j_alat" class="label">Jumlah Alat: </label>
+			<input type="number" value="0" id="j_alat" maxlength="2">
+            <button type="reset" id="reset_jml" onclick="resetJmlAlat();" style="margin-left: 10px;">Reset</button>
+		</form>
+		<span class="label" id="alertNamaJml" style="display: none;"></span>
+		<div class="clear"></div>
+	</div>
+	<div id="mainDisplay">
+		<form>
+			<div class="container" id="kolomInputan"></div>
+		</form>
+		<div class="clear"></div>
+		<div class="foother">
+		<form>
+			<label for="tarif" class="label">Tarif: </label>
+			<input type="number" id="tarif" placeholder="Tarif listrik perKWh Rp.">
+			<label for="pemakaian" class="label">Pemakaian: </label>
+			<input type="number" id="pemakaian" placeholder="Listrik Dalam Berapa hari">
+		</form>
+		<button type="button" onclick="hitung()" style="margin-left: 10px;">Submit</button>
+		<button type="button" onclick="resetJmlAlat()" style="margin-left: 10px;">Reset</button>
+		<span class="label" id="alertNamaPem" style="display: none;"></span>
+		<div class="clear"></div>
+		</div>
+    </div>
+	<div id="hasilDisplay">
+	</div>
+	</div>
+            </section>
+            <div class="clear"></div>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">MonLis</a>
+                    <span class="footer__description">One stop solution to help you to monitoring your electric consumption</span>
+                    <div>
+                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Delivery</a></li>
+                        <li><a href="#" class="footer__link">Pricing</a></li>
+                        <li><a href="#" class="footer__link">Fast food</a></li>
+                        <li><a href="#" class="footer__link">Reserve your spot</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Information</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Event</a></li>
+                        <li><a href="#" class="footer__link">Contact us</a></li>
+                        <li><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li><a href="#" class="footer__link">Terms of services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Adress</h3>
+                    <ul>
+                        <li>Lima - Peru</li>
+                        <li>Jr Union #999</li>
+                        <li>999 - 888 - 777</li>
+                        <li>tastyfood@email.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2024 MonLis. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
