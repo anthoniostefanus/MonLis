@@ -30,7 +30,7 @@
 }
 .navbar {
     background-color: #069C54;
-    width: 95%;
+    width: 45%;
     margin: auto;
     padding: 5px;
     border-radius: 10px;
@@ -52,15 +52,16 @@
     margin-left: 10px;
     text-decoration: none;
 }
+
 #jml_alat button {
     float: left;
-    background: #333;
-    color: white;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
     font-size: 17px;
     border: 1px solid grey;
     border-left: none;
     cursor: pointer;
-    padding: 5px;
+    padding: 7px;
     border-radius: 0px 3px 3px 0px;
 }
 .label{
@@ -75,10 +76,10 @@
 #jml_alat input[type=number] {
     font-size: 17px;
     float: left;
-    color: white;
-    background: #333;
+    color: rgb(0, 0, 0);
+    background: #ffffff;
     border-radius: 3px 0px 0px 3px;
-    padding: 5px;
+    padding: 7px;
     border: 1px solid grey;
     width: 200px;
 	display: block;
@@ -98,25 +99,25 @@
 .foother input[type=number] {
     font-size: 14px;
     float: left;
-    color: white;
-    background: #333;
+    color: rgb(0, 0, 0);
+    background: #ffffff;
     border-radius: 3px 0px 0px 3px;
-    padding: 5px;
+    padding: 10px;
     border: 1px solid grey;
-    width: 150px;
+    width: 250px;
 	display: block;
     /*margin: 10px 0px 0px 0px;*/
 }
 .foother button {
 	display: block;
     float: left;
-    background: #333;
-    color: white;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
     font-size: 17px;
     border: 1px solid grey;
     border-left: none;
     cursor: pointer;
-    padding: 3px;
+    padding: 8px;
     border-radius: 0px 3px 3px 0px;
 }
 .btn {
@@ -191,13 +192,13 @@ table td {
 }
 .title {
     font-size: 15px;
-    background-color: #333;
+    background-color: #048654;
     color: white;
 }
 
 .title:hover {
     font-size: 15px;
-    background-color: #333;
+    background-color: #3aa571;
     color: white;
 }
 
@@ -211,14 +212,14 @@ table tbody tr:nth-child(even):hover, table tbody tr:hover{
 }
 
 .foother button:hover, #jml_alat button:hover{
-    background-color: #555;
+    background-color: #ebe6e6;
 }
 .inputan input:hover,.inputan:hover{
     background-color: #f7f7f7;
     transition-duration: 0.3s;
 }
 .foother input[type=number]:hover,#jml_alat input[type=number]:hover {
-    background: #444;
+    background: #ebe6e6;
 }
 
 .quoteCon{

@@ -29,10 +29,7 @@
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                        <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
-                    </ul>
+                        <li class="nav__item"><a href="#services" class="nav__link">Special</a></li>
                 </div>
 
                 <div class="nav__toggle" id="nav-toggle">
@@ -75,7 +72,7 @@
                 <div class="navbar">
                     <form action="" method="post" id="jml_alat">
                         <label for="j_alat" class="label">Jumlah Alat: </label>
-                        <input type="number" value="0" id="j_alat" maxlength="2">
+                        <input type="number" value="0" id="j_alat" maxlength="2"style="margin-right: 10px;">
                         <button type="reset" id="reset_jml" onclick="resetJmlAlat();">Reset</button>
                     </form>
                     <span class="label" id="alertNamaJml" style="display: none;"></span>
@@ -91,30 +88,15 @@
                         <label for="tarif" class="label">Tarif: </label>
                         <input type="number" id="tarif" placeholder="Tarif listrik perKWh Rp.">
                         <label for="pemakaian" class="label">Pemakaian: </label>
-                        <input type="number" id="pemakaian" placeholder="Listrik Dalam Berapa hari">
+                        <input type="number" id="pemakaian" placeholder="Listrik Dalam Berapa hari" style="margin-right: 10px;">
                     </form>
-                    <button type="button" onclick="hitung()">Submit</button>
+                    <button type="button" onclick="hitung()"style="margin-right: 10px;">Submit</button>
                     <button type="button" onclick="resetJmlAlat()" >Reset</button>
                     <span class="label" id="alertNamaPem" style="display: none;"></span>
                     <div class="clear"></div>
                     </div>
                 </div>
                 <div id="hasilDisplay">
-                </div>
-            </section>
-
-            <!--========== CONTACT US ==========-->
-            <section class="contact section bd-container" id="contact">
-                <div class="contact__container bd-grid">
-                    <div class="contact__data">
-                        <span class="section-subtitle contact__initial">Let's talk</span>
-                        <h2 class="section-title contact__initial">Contact us</h2>
-                        <p class="contact__description">If you want to reserve a table in our restaurant, contact us and we will attend you quickly, with our 24/7 chat service.</p>
-                    </div>
-
-                    <div class="contact__button">
-                        <a href="#" class="button">Contact us now</a>
-                    </div>
                 </div>
             </section>
         </main>
